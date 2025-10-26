@@ -127,6 +127,31 @@ my-react-app/
 
 ## 🚀 Deployment
 
+O site está configurado para deploy automático no GitHub Pages!
+
+### Como Publicar no GitHub Pages
+
+1. **Atualize o nome do repositório no `vite.config.ts`**:
+
+   - Linha 6: substitua `'/my-react-app/'` pelo nome do SEU repositório
+
+2. **Faça commit e push das mudanças**:
+
+   ```bash
+   git add .
+   git commit -m "Configure GitHub Pages deployment"
+   git push origin main
+   ```
+
+3. **Ative o GitHub Pages no GitHub**:
+
+   - Vá em Settings → Pages
+   - Em "Source", escolha "GitHub Actions"
+   - Salve
+
+4. **Pronto!** Em poucos minutos seu site estará em:
+   `https://SEU-USUARIO.github.io/SEU-REPOSITORIO/`
+
 ### Build for Production
 
 ```bash
@@ -134,13 +159,6 @@ npm run build
 ```
 
 This creates a `dist` folder with optimized, production-ready files.
-
-### Deploy Options
-
-- **Vercel**: Connect your GitHub repo for automatic deployments
-- **Netlify**: Drag and drop the `dist` folder or connect via Git
-- **GitHub Pages**: Use GitHub Actions to deploy automatically
-- **Firebase Hosting**: Use Firebase CLI for deployment
 
 ## 📝 Next Steps
 

@@ -12,7 +12,8 @@
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "serve": "vite preview",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "deploy": "npm run build"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.10",
