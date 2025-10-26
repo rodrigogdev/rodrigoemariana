@@ -9,7 +9,7 @@
 }
 
 .countdown-title {
-  color: white;
+  color: var(--primary);
   font-family: "Parisienne", cursive;
   font-size: 3rem;
   font-weight: normal;

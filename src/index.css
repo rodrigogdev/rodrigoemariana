@@ -7,8 +7,8 @@
 
 /* Global CSS Variables */
 :root {
-  --primary-green-light: #ddd0c8;
-  --primary-green-dark: #323232;
+  --primary-green-light: #fefae0;
+  --primary-green-dark: #fffada;
   --primary-green-gradient: linear-gradient(
     135deg,
     var(--primary-green-light) 0%,
@@ -16,8 +16,8 @@
   );
 
   /* Simplified Colors */
-  --primary: #2e572f;
-  --secondary: #4c804d;
+  --primary: #283618;
+  --secondary: #606c38;
   --primary-gradient: linear-gradient(
     135deg,
     var(--secondary) 0%,

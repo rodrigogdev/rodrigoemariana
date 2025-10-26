@@ -258,9 +258,9 @@ const GiftList = () => {
         <div className="gift-list-note">
           <p>
             <em>
-              "The best things in life aren't things. The best things in life
-              are the people we love, the places we've been, and the memories
-              we've made along the way."
+              "As melhores coisas da vida não são coisas. As melhores coisas da
+              vida são as pessoas que amamos, os lugares por onde passamos, e as
+              memórias que criamos juntos ao longo do caminho."
             </em>
           </p>
         </div>
