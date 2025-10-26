@@ -1,0 +1,161 @@
+.ceremony-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: var(--primary-green-gradient);
+  min-height: 80vh;
+}
+
+.ceremony-content {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.ceremony-title {
+  font-family: "Alex Brush", cursive;
+  font-size: 4rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+}
+
+.ceremony-subtitle {
+  font-family: "Parisienne", cursive;
+  font-size: 2rem;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.ceremony-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--primary);
+  margin: 0;
+}
+
+.ceremony-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.ceremony-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ceremony-image-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.ceremony-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+
+.ceremony-image-front {
+  background-image: url("../../assets/quiosquefrente.png");
+}
+
+.ceremony-image-side {
+  background-image: url("../../assets/quiosque.png");
+}
+
+.ceremony-image-caption {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 0;
+  text-align: center;
+}
+
+.ceremony-map-container {
+  margin-top: 3rem;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.ceremony-map-title {
+  font-family: "Alex Brush", cursive;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+.ceremony-map {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.ceremony-map iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ceremony-container {
+    padding: 2rem 1rem;
+  }
+
+  .ceremony-title {
+    font-size: 3rem;
+  }
+
+  .ceremony-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .ceremony-description {
+    font-size: 1.1rem;
+  }
+
+  .ceremony-images {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ceremony-image {
+    height: 200px;
+  }
+
+  .ceremony-map-title {
+    font-size: 2rem;
+  }
+
+  .ceremony-map {
+    padding: 1rem;
+  }
+
+  .ceremony-map iframe {
+    height: 300px;
+  }
+}

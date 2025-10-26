@@ -1,0 +1,74 @@
+.big-picture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../../assets/caparodrigo.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.big-picture-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.big-picture-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.big-picture-title {
+  font-family: "Alex Brush", cursive;
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  letter-spacing: 2px;
+}
+
+.big-picture-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+.big-picture-subtitle-normal {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .big-picture-title {
+    font-size: 3rem;
+  }
+
+  .big-picture-subtitle {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .big-picture-heart {
+    font-size: 2.5rem;
+  }
+}

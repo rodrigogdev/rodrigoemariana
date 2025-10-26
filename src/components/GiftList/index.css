@@ -1,0 +1,352 @@
+.gift-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: white;
+  min-height: 100vh;
+}
+
+.gift-list-content {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.gift-list-title {
+  font-family: "Alex Brush", cursive;
+  font-size: 4rem;
+  color: var(--primary);
+  margin-bottom: 4rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+}
+
+.gift-list-subtitle {
+  font-family: "Parisienne", cursive;
+  font-size: 2rem;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.gift-list-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--primary);
+  margin-bottom: 3rem;
+}
+
+.gift-list-subtitle {
+  font-family: "Parisienne", cursive;
+  font-size: 2rem;
+  color: var(--secondary);
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+/* PIX Modal Styles */
+.pix-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pix-modal {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 2px solid #4c804d;
+  position: relative;
+  max-width: 450px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.pix-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pix-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+}
+
+.pix-close {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.pix-close:hover {
+  background: #c82333;
+  transform: scale(1.1);
+}
+
+.pix-content {
+  text-align: center;
+}
+
+.pix-code-container {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px dashed #dee2e6;
+  display: inline-block;
+}
+
+.pix-code-image {
+  max-width: 220px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pix-instructions {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.gift-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.gift-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gift-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.gift-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gift-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gift-card-content {
+  padding: 1.5rem;
+}
+
+.gift-card-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.gift-card-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gift-card-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.gift-card-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gift-card-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 128, 77, 0.3);
+}
+
+.gift-card-button:active {
+  transform: translateY(0);
+}
+
+.gift-list-note {
+  background: var(--primary-green-gradient);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.gift-list-note p {
+  font-family: "Georgia", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--primary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .gift-list-container {
+    padding: 2rem 1rem;
+  }
+
+  .gift-list-title {
+    font-size: 3rem;
+  }
+
+  .gift-list-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .gift-list-description {
+    font-size: 1.1rem;
+  }
+
+  .gift-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .gift-card-content {
+    padding: 1rem;
+  }
+
+  .gift-card-description {
+    font-size: 0.95rem;
+    min-height: 4rem;
+  }
+
+  .gift-card-price {
+    font-size: 1.1rem;
+  }
+
+  .gift-card-button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .pix-modal {
+    padding: 1.5rem;
+    max-width: 400px;
+  }
+
+  .pix-title {
+    font-size: 1.1rem;
+  }
+
+  .pix-code-image {
+    max-width: 180px;
+  }
+
+  .pix-instructions {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gift-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .gift-list-note {
+    padding: 1.5rem;
+  }
+
+  .gift-list-note p {
+    font-size: 1.1rem;
+  }
+
+  .pix-modal {
+    padding: 1.2rem;
+    max-width: 350px;
+  }
+
+  .pix-title {
+    font-size: 1rem;
+  }
+
+  .pix-code-image {
+    max-width: 160px;
+  }
+
+  .pix-instructions {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,149 @@
+.presence-confirmation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--primary-green-gradient);
+  padding: 2rem;
+  text-align: center;
+}
+
+.presence-confirmation-title {
+  font-family: "Alex Brush", cursive;
+  font-size: 3.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+}
+
+.presence-confirmation-subtitle {
+  font-family: "Parisienne", cursive;
+  font-size: 1.5rem;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.confirmation-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4c804d;
+  box-shadow: 0 0 0 3px rgba(76, 128, 77, 0.1);
+}
+
+.confirm-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.confirm-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 87, 47, 0.3);
+}
+
+.confirm-button:active {
+  transform: translateY(0);
+}
+
+.success-message {
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary);
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #f0f8f0;
+  border-radius: 8px;
+  border-left: 4px solid #4c804d;
+}
+
+.reset-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: var(--secondary);
+  border: 2px solid #4c804d;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #4c804d;
+  color: white;
+}
+
+.google-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.google-form-container iframe {
+  border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .presence-confirmation-title {
+    font-size: 2.5rem;
+  }
+
+  .presence-confirmation-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .confirmation-form {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+}
