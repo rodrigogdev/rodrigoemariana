@@ -58,6 +58,9 @@
   justify-content: center;
   z-index: 1000;
   animation: fadeIn 0.3s ease-out;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 @keyframes fadeIn {
@@ -78,6 +81,8 @@
   width: 100%;
   max-width: 500px;
   padding: 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
 .pix-close-button {
@@ -331,21 +336,19 @@
     font-size: 0.9rem;
   }
 
-  .pix-modal {
-    padding: 1.5rem;
-    max-width: 400px;
+  .pix-modal-content {
+    padding: 1.5rem 1rem 2rem 1rem;
+    min-height: 100vh;
   }
 
-  .pix-title {
-    font-size: 1.1rem;
+  .pix-copy-button {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 2rem;
   }
 
   .pix-code-image {
-    max-width: 180px;
-  }
-
-  .pix-instructions {
-    font-size: 0.9rem;
+    max-width: 140px;
   }
 }
 
@@ -363,20 +366,18 @@
     font-size: 1.1rem;
   }
 
-  .pix-modal {
-    padding: 1.2rem;
-    max-width: 350px;
+  .pix-modal-content {
+    padding: 1.2rem 0.8rem 2rem 0.8rem;
+    min-height: 100vh;
   }
 
-  .pix-title {
-    font-size: 1rem;
+  .pix-copy-button {
+    width: calc(100% - 1.6rem);
+    max-width: 300px;
+    margin-bottom: 2rem;
   }
 
   .pix-code-image {
-    max-width: 160px;
-  }
-
-  .pix-instructions {
-    font-size: 0.85rem;
+    max-width: 120px;
   }
 }
