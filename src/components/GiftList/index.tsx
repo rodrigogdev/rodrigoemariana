@@ -19,16 +19,37 @@ import image16 from "../../assets/image16.png"
 import image17 from "../../assets/image17.png"
 import image18 from "../../assets/image18.png"
 import pixCode from "../../assets/pix/pix1.png"
+import nubankLogo from "../../assets/nubanklogo.png"
+import { pixKeys } from "../../assets/pix/pixkeys"
+import copyIcon from "../../assets/copypaste.svg"
+import checkIcon from "../../assets/check.svg"
 
 const GiftList = () => {
   const [selectedGift, setSelectedGift] = useState<number | null>(null)
+  const [copied, setCopied] = useState(false)
 
   const handleBuyClick = (giftId: number) => {
     setSelectedGift(giftId)
+    setCopied(false)
   }
 
   const closePixSection = () => {
     setSelectedGift(null)
+    setCopied(false)
+  }
+
+  const handleCopyPixCode = (giftId: number) => {
+    const pixKey = `pix${giftId}` as keyof typeof pixKeys
+    const code = pixKeys[pixKey]
+
+    if (code) {
+      navigator.clipboard.writeText(code)
+      setCopied(true)
+
+      setTimeout(() => {
+        setCopied(false)
+      }, 2000)
+    }
   }
 
   useEffect(() => {
@@ -208,27 +229,59 @@ const GiftList = () => {
         </p>
 
         {selectedGift && (
-          <div className="pix-modal-overlay" onClick={closePixSection}>
-            <div className="pix-modal" onClick={(e) => e.stopPropagation()}>
-              <div className="pix-header">
-                <h3 className="pix-title">Código PIX para Pagamento</h3>
-                <button className="pix-close" onClick={closePixSection}>
-                  ×
-                </button>
+          <div className="pix-modal-overlay">
+            <div className="pix-modal-content">
+              <button className="pix-close-button" onClick={closePixSection}>
+                ×
+              </button>
+
+              <div className="pix-logo-container">
+                <img src={nubankLogo} alt="Nubank" className="pix-logo" />
               </div>
-              <div className="pix-content">
-                <div className="pix-code-container">
-                  <img
-                    src={pixCode}
-                    alt="Código PIX"
-                    className="pix-code-image"
-                  />
-                </div>
-                <p className="pix-instructions">
-                  Use o app do seu banco para escanear o código PIX e finalizar
-                  o pagamento
-                </p>
+
+              <p className="pix-transfer-text">
+                Transfira{" "}
+                {giftItems.find((item) => item.id === selectedGift)?.price} para
+                Mariana Sophia Apparício
+              </p>
+
+              <p className="pix-instruction-title">
+                Use o QR Code do Pix para pagar
+              </p>
+
+              <p className="pix-instruction-text">
+                Abra o app em que vai fazer a transferência, escaneie a imagem
+                ou cole o código do QR Code
+              </p>
+
+              <div className="pix-code-container">
+                <img
+                  src={pixCode}
+                  alt="Código PIX"
+                  className="pix-code-image"
+                />
               </div>
+
+              <p className="pix-price-value">
+                {giftItems.find((item) => item.id === selectedGift)?.price}
+              </p>
+
+              <button
+                className="pix-copy-button"
+                onClick={() => handleCopyPixCode(selectedGift)}
+              >
+                {copied ? (
+                  <>
+                    COPIADO
+                    <img src={checkIcon} alt="Copied" className="pix-icon" />
+                  </>
+                ) : (
+                  <>
+                    COPIAR CÓDIGO DO QR CODE
+                    <img src={copyIcon} alt="Copy" className="pix-icon" />
+                  </>
+                )}
+              </button>
             </div>
           </div>
         )}

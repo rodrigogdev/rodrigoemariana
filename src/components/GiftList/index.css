@@ -46,14 +46,13 @@
   font-style: italic;
 }
 
-/* PIX Modal Styles */
 .pix-modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,95 +69,126 @@
   }
 }
 
-.pix-modal {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  border: 2px solid #4c804d;
-  position: relative;
-  max-width: 450px;
-  width: 90%;
-  max-height: 80vh;
-  overflow-y: auto;
-  animation: slideUp 0.3s ease-out;
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.pix-header {
+.pix-modal-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
 }
 
-.pix-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin: 0;
-}
-
-.pix-close {
-  background: #dc3545;
-  color: white;
+.pix-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
   border: none;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 2rem;
+  color: #666;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
 }
 
-.pix-close:hover {
-  background: #c82333;
+.pix-close-button:hover {
+  color: #000;
   transform: scale(1.1);
 }
 
-.pix-content {
+.pix-logo-container {
+  margin-bottom: 2rem;
+}
+
+.pix-logo {
+  height: 60px;
+  width: auto;
+}
+
+.pix-transfer-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--button-bank);
+  margin-bottom: 2rem;
   text-align: center;
+}
+
+.pix-instruction-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.pix-instruction-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .pix-code-container {
   background: white;
-  border-radius: 10px;
+  border: 2px solid var(--button-bank);
+  border-radius: 8px;
   padding: 1rem;
-  margin-bottom: 1rem;
-  border: 2px dashed #dee2e6;
-  display: inline-block;
+  margin-bottom: 1.5rem;
 }
 
 .pix-code-image {
-  max-width: 220px;
+  max-width: 196px;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
-.pix-instructions {
+.pix-price-value {
   font-family: "Roboto", sans-serif;
-  font-size: 0.95rem;
-  color: #6c757d;
-  line-height: 1.4;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 2rem;
 }
 
+.pix-copy-button {
+  width: 400px;
+  padding: 1rem;
+  background: var(--button-bank);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.pix-copy-button:hover {
+  background: #6a0099;
+  transform: translateY(-2px);
+}
+
+.pix-icon {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
 .gift-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

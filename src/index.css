@@ -23,6 +23,14 @@
     var(--secondary) 0%,
     var(--primary) 100%
   );
+  --tertiary: #6c8352;
+  --quaternary: #93a654;
+  --button-bank: #820ad1;
+  --secondary-gradient: linear-gradient(
+    135deg,
+    var(--tertiary) 0%,
+    var(--quaternary) 100%
+  );
 }
 
 html,
