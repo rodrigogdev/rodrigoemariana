@@ -76,7 +76,7 @@ const GiftList = () => {
       image: image1,
       title: "",
       description: "Taxa para a noiva não jogar o buquê para sua namorada",
-      price: "R$ 152,74",
+      price: "R$ 211,00",
       store: "Magazine Luiza",
     },
     {
@@ -84,7 +84,7 @@ const GiftList = () => {
       image: image2,
       title: "",
       description: "Kit de pedido de desculpas para depois de uma DR",
-      price: "R$ 247,32",
+      price: "R$ 287,00",
       store: "Casas Bahia",
     },
     {
@@ -92,7 +92,7 @@ const GiftList = () => {
       image: image3,
       title: "",
       description: "Taxa para despachar a mala da noiva na lua de mel",
-      price: "R$ 377,12",
+      price: "R$ 354,00",
       store: "Americanas",
     },
     {
@@ -100,7 +100,7 @@ const GiftList = () => {
       image: image4,
       title: "",
       description: "Ajuda para a primeira compra de supermercado do casal",
-      price: "R$ 544,92",
+      price: "R$ 441,00",
       store: "Magazine Luiza",
     },
     {
@@ -109,7 +109,7 @@ const GiftList = () => {
       title: "",
       description:
         "Uma caixa de rojão para soltar quando a noiva assumir que está errada",
-      price: "R$ 891,76",
+      price: "R$ 529,00",
       store: "Casas Bahia",
     },
     {
@@ -117,7 +117,7 @@ const GiftList = () => {
       image: image6,
       title: "",
       description: "Viagem de lua de mel dos noivos",
-      price: "R$ 1.359,04",
+      price: "R$ 642,00",
       store: "Americanas",
     },
     {
@@ -125,7 +125,7 @@ const GiftList = () => {
       image: image7,
       title: "",
       description: "Aluguel da limousine para entrada da noiva",
-      price: "R$ 2.031,68",
+      price: "R$ 783,00",
       store: "Magazine Luiza",
     },
     {
@@ -133,7 +133,7 @@ const GiftList = () => {
       image: image8,
       title: "",
       description: "Tapa ouvidos para a noiva aguentar o ronco do noivo",
-      price: "R$ 3.074,40",
+      price: "R$ 954,00",
       store: "Casas Bahia",
     },
     {
@@ -141,7 +141,7 @@ const GiftList = () => {
       image: image9,
       title: "",
       description: "Cadeado reforçado para a porta da sala gamer do noivo",
-      price: "R$ 4.754,80",
+      price: "R$ 1.187,00",
       store: "Americanas",
     },
     {
@@ -150,7 +150,7 @@ const GiftList = () => {
       title: "",
       description:
         "Chinelo da razão, quem estiver com ele, tem razão. (só cabe no pé da noiva)",
-      price: "R$ 5.119,60",
+      price: "R$ 1.456,00",
       store: "Magazine Luiza",
     },
     {
@@ -158,7 +158,7 @@ const GiftList = () => {
       image: image11,
       title: "",
       description: "Manual de como entender a noiva",
-      price: "R$ 5.829,44",
+      price: "R$ 1.773,00",
       store: "Casas Bahia",
     },
     {
@@ -166,7 +166,7 @@ const GiftList = () => {
       image: image12,
       title: "",
       description: "Dinheiro pro noivo comprar um eletrodoméstico misterioso",
-      price: "R$ 6.849,28",
+      price: "R$ 2.168,00",
       store: "Americanas",
     },
     {
@@ -174,7 +174,7 @@ const GiftList = () => {
       image: image13,
       title: "",
       description: "Make da noiva",
-      price: "R$ 7.073,60",
+      price: "R$ 2.645,00",
       store: "Magazine Luiza",
     },
     {
@@ -182,7 +182,7 @@ const GiftList = () => {
       image: image14,
       title: "",
       description: "Ajuda para viagem de lua de mel dos noivos",
-      price: "R$ 7.588,80",
+      price: "R$ 3.228,00",
       store: "Casas Bahia",
     },
     {
@@ -190,7 +190,7 @@ const GiftList = () => {
       image: image15,
       title: "",
       description: "SPA para a noiva (por tempo indeterminado)",
-      price: "R$ 7.898,40",
+      price: "R$ 3.938,00",
       store: "Americanas",
     },
     {
@@ -199,7 +199,7 @@ const GiftList = () => {
       title: "",
       description:
         "Utensílio de cozinha com dupla finalidade. (Amassar pão ou acalmar o noivo)",
-      price: "R$ 8.577,60",
+      price: "R$ 4.006,00",
       store: "Americanas",
     },
     {
@@ -207,7 +207,7 @@ const GiftList = () => {
       image: image17,
       title: "",
       description: "Segurança residencial especializado",
-      price: "R$ 8.856,40",
+      price: "R$ 4.167,00",
       store: "Americanas",
     },
     {
