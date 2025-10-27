@@ -23,8 +23,8 @@
     var(--secondary) 0%,
     var(--primary) 100%
   );
-  --tertiary: #6c8352;
-  --quaternary: #93a654;
+  --tertiary: #738b56;
+  --quaternary: #a9bc6c;
   --button-bank: #820ad1;
   --secondary-gradient: linear-gradient(
     135deg,

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: var(--primary-green-gradient);
+  /* background: var(--primary-green-gradient); */
   padding: 2rem;
   text-align: center;
 }

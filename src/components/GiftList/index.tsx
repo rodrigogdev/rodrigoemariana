@@ -18,7 +18,24 @@ import image15 from "../../assets/image15.png"
 import image16 from "../../assets/image16.png"
 import image17 from "../../assets/image17.png"
 import image18 from "../../assets/image18.png"
-import pixCode from "../../assets/pix/pix1.png"
+import pix1 from "../../assets/pix/pix1.png"
+import pix2 from "../../assets/pix/pix2.png"
+import pix3 from "../../assets/pix/pix3.png"
+import pix4 from "../../assets/pix/pix4.png"
+import pix5 from "../../assets/pix/pix5.png"
+import pix6 from "../../assets/pix/pix6.png"
+import pix7 from "../../assets/pix/pix7.png"
+import pix8 from "../../assets/pix/pix8.png"
+import pix9 from "../../assets/pix/pix9.png"
+import pix10 from "../../assets/pix/pix10.png"
+import pix11 from "../../assets/pix/pix11.png"
+import pix12 from "../../assets/pix/pix12.png"
+import pix13 from "../../assets/pix/pix13.png"
+import pix14 from "../../assets/pix/pix14.png"
+import pix15 from "../../assets/pix/pix15.png"
+import pix16 from "../../assets/pix/pix16.png"
+import pix17 from "../../assets/pix/pix17.png"
+import pix18 from "../../assets/pix/pix18.png"
 import nubankLogo from "../../assets/nubanklogo.png"
 import { pixKeys } from "../../assets/pix/pixkeys"
 import copyIcon from "../../assets/copypaste.svg"
@@ -50,6 +67,30 @@ const GiftList = () => {
         setCopied(false)
       }, 2000)
     }
+  }
+
+  const getPixImage = (giftId: number) => {
+    const pixImages: { [key: number]: string } = {
+      1: pix1,
+      2: pix2,
+      3: pix3,
+      4: pix4,
+      5: pix5,
+      6: pix6,
+      7: pix7,
+      8: pix8,
+      9: pix9,
+      10: pix10,
+      11: pix11,
+      12: pix12,
+      13: pix13,
+      14: pix14,
+      15: pix15,
+      16: pix16,
+      17: pix17,
+      18: pix18,
+    }
+    return pixImages[giftId] || pix1
   }
 
   useEffect(() => {
@@ -256,7 +297,7 @@ const GiftList = () => {
 
               <div className="pix-code-container">
                 <img
-                  src={pixCode}
+                  src={getPixImage(selectedGift)}
                   alt="Código PIX"
                   className="pix-code-image"
                 />
