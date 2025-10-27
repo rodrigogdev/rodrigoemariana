@@ -24,3 +24,34 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+@media (max-width: 768px) {
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+
+  .number {
+    font-size: 1.6rem;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 60px;
+    height: 60px;
+  }
+
+  .number {
+    font-size: 1.2rem;
+  }
+
+  .label {
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+  }
+}
